@@ -9,11 +9,11 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.soundsystem.depended.DependedCDPlayer;
-import com.soundsystem.depended.DependedCDPlayerConfig;
 import com.soundsystem.depended.SgtPeppersForDependency;
+import com.soundsystem.depended.SoundSystemConfig;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = DependedCDPlayerConfig.class)
+@ContextConfiguration(classes = SoundSystemConfig.class)
 
 public class DependedCDPlayerTest {
 	@Autowired
