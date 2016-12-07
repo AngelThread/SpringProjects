@@ -1,4 +1,4 @@
-package com.soundsystem.advanceWiring;
+package com.soundsystem.advance.wiring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.soundsystem.advanceWiring.CDPlayerConfigAdvance;
-import com.soundsystem.advanceWiring.MagicBean;
+import com.soundsystem.advance.wiring.CDPlayerConfigAdvance;
+import com.soundsystem.advance.wiring.MagicBean;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes=CDPlayerConfigAdvance.class)
