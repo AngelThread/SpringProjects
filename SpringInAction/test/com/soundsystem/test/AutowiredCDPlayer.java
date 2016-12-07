@@ -12,7 +12,7 @@ import com.soundsystem.CDPlayerConfig;
 import com.soundsystem.autowiring.CDPlayer;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes=CDPlayerConfig.class)
+@ContextConfiguration(classes= CDPlayerConfig.class)
 public class AutowiredCDPlayer {
 	
 	@Autowired
@@ -21,10 +21,6 @@ public class AutowiredCDPlayer {
 	 @Test
 	 public void cdShouldNotBeNull(){
 		 assertNotNull(mediaPlayer);
-		 
-		 
 	 }
-	 
-	 
 
 }

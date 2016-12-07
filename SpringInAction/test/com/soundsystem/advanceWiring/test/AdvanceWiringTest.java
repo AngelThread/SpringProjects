@@ -1,4 +1,4 @@
-package com.soundsystem.test;
+package com.soundsystem.advanceWiring.test;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -8,18 +8,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.soundsystem.CDPlayerConfig;
-import com.soundsystem.CompactDisc;
-import com.soundsystem.SgtPeppers;
+import com.soundsystem.advanceWiring.CDPlayerConfigAdvance;
+import com.soundsystem.advanceWiring.MagicBean;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes=CDPlayerConfig.class)
-public class CDPlayerTest {
+@ContextConfiguration(classes=CDPlayerConfigAdvance.class)
 
+public class AdvanceWiringTest {
+	@Autowired
+	private MagicBean magicBean;
 	@Test
-	public void cdShouldNotBeNull() {
-		CompactDisc cd = new SgtPeppers();
-		assertNotNull(cd);
+	public void testNotNullMagic() {
+
+		assertNotNull(magicBean);
 	}
 
 }
