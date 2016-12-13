@@ -15,7 +15,8 @@ public class ExpressiveConfig {
 	
 	@Bean
 	public BlankDisc disc(){
-		return new BlankDisc(env.getProperty("disc.title"), env.getProperty("disc.artist"));
+		return new BlankDisc(env.getProperty("disc.title"), env.getProperty("disc.artist"), 
+				Integer.parseInt(env.getProperty("disc.realseYear","1990")));
 	}
 
 }

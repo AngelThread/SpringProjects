@@ -21,6 +21,7 @@ public class RuntimeValueInjectionTest {
 	@Test
 	public void testRuntimeInjection(){
 		assertEquals("The Beatles", blankDisc.getArtist());
+		System.out.println(blankDisc.getRelaseYear());
 		
 	}
 }
